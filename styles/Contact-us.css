@@ -1,0 +1,72 @@
+body {
+    background: url('../photos/contact-us.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+.vibio-title {
+    font-family: 'Lobster', cursive;
+    font-size: 62px;
+    font-weight: bold;
+    color: #111; /* Darker color for better contrast */
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* 🔹 Transparent Navbar */
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+/* 🔹 Center Navbar Content */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔹 Navbar Links */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #e2e2e2;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Center Contact Form */
+.contact-form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+    height: 100vh;  /* Makes sure it takes full viewport height */
+    text-align: center;  /* Ensures alignment */
+}
+
+/* Ensures the iframe adjusts properly */
+.contact-form iframe {
+    max-width: 90%; /* Makes sure it doesn’t overflow on smaller screens */
+    width: 800px; /* Keeps default width */
+    height: 700px; /* Adjust as needed */
+    border-radius: 10px; /* Optional rounded corners */
+}

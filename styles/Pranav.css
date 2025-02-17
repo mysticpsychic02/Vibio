@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@300;400;700&display=swap');
+
+/* 🌆 Full Background Image */
+body {
+    background: url('../photos/pranav.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #050505; /* Darker text for better readability */
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 Website Title */
+.vibio-title {
+    font-family: cursive;
+    font-size: 62px;
+    font-weight: bold;
+    color: #111; /* Darker color for better contrast */
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* 🔹 Transparent Navbar */
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+/* 🔹 Center Navbar Content */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔹 Navbar Links */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #e2e2e2;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.intro-section {
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+}
+
+.intro-box {
+    max-width: 950px;
+    margin: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    z-index: 10; /* Ensure it stays on top */
+}
+/* Left side images */
+.left-collage {
+    margin-top: 90px;
+    left: -1200px; /* Move it outside the content box */
+}
+
+/* Right side images */
+.right-collage {
+    right: -120px;
+}
+
+/* Style individual images in collage */
+.collage-image {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add different rotations for a natural collage look */
+.collage-image:nth-child(1) {
+    transform: rotate(-10deg);
+}
+
+.collage-image:nth-child(2) {
+    transform: rotate(5deg);
+}
+
+.collage-image:nth-child(3) {
+    transform: rotate(-5deg);
+}
+
+/* Add hover effect */
+.collage-image:hover {
+    transform: scale(1.1);
+}
+/* 🔹 Introduction Headline */
+.intro-box h1 {
+    font-family: cursive;
+    font-size: 38px;
+    font-weight: bold;
+    color: #ffcc00; /* Golden color */
+}
+
+/* 🔹 Introduction Text */
+.intro-box p {
+    font-size: 23px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    color: white;
+}
+
+.soccer p{
+    font-size: 50px;
+}
